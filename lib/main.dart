@@ -11,13 +11,14 @@ class MyApp extends StatefulWidget {
 }
 
 class _MyAppState extends State<MyApp> {
+  String _text = 'Initial text';
+
   @override
   Widget build(BuildContext context) {
-    String _text = 'Initial text';
-
     void _textHandler(){
       setState(() {
         _text = lipsum.createSentence();
+
       });
     }
 
