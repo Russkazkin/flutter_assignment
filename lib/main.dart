@@ -18,7 +18,7 @@ class _MyAppState extends State<MyApp> {
   Widget build(BuildContext context) {
     void _textHandler(){
       setState(() {
-        _text = lipsum.createSentence();
+        _text = lipsum.createSentence(sentenceLength: 5);
       });
     }
 
