@@ -7,7 +7,11 @@ class TextControl extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-
-    return Container();
+    return Container(
+      child: RaisedButton(
+        onPressed: textHandler,
+        child: Text('Push for new sentence'),
+      ),
+    );
   }
 }
