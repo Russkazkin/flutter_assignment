@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:lipsum/lipsum.dart' as lipsum;
 
 import 'textControl.dart';
+import 'sentence.dart';
 
 void main() => runApp(MyApp());
 
@@ -18,7 +19,6 @@ class _MyAppState extends State<MyApp> {
     void _textHandler(){
       setState(() {
         _text = lipsum.createSentence();
-
       });
     }
 
@@ -30,7 +30,7 @@ class _MyAppState extends State<MyApp> {
         ),
         body: Column(
           children: [
-            Text(_text),
+            Sentence(_text),
             TextControl(_textHandler),
           ],
         ),
